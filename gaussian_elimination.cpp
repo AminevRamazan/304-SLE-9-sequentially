@@ -17,7 +17,7 @@ int gaussianElimination(const std::vector<std::vector<double>>& A, const std::ve
                 maxRow = k;
             }
         }
-        std::cout << i << " " << maxRow << std::endl;
+        
         if (std::fabs(A_copy[maxRow][i]) < 1e-19) {
             return 0;
         }
